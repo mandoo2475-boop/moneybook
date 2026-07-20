@@ -68,10 +68,12 @@ h1,h2,h3,.jua{font-family:'Jua','Gowun Dodum',sans-serif;font-weight:400}
 .cats button .e{font-size:20px}
 .cats button.sel{border-color:var(--butter);background:#FFF8E8;color:var(--ink)}
 .row{display:flex;gap:8px;margin-bottom:14px}
-.row input{flex:1;border:2px solid var(--line);border-radius:14px;padding:11px 12px;font-size:14px;
+.row input{flex:1 1 0;min-width:0;border:2px solid var(--line);border-radius:14px;padding:11px 12px;font-size:14px;
   font-family:inherit;outline:none;background:var(--card)}
 .row input:focus{border-color:var(--mint)}
-#date{max-width:150px;color:var(--sub)}
+#date{flex:0 0 118px;max-width:118px;color:var(--sub);-webkit-appearance:none;appearance:none;
+  padding:11px 8px;height:46px;text-align:center}
+#date::-webkit-date-and-time-value{text-align:center}
 .bigbtn{width:100%;border:0;border-radius:18px;padding:15px;font-family:'Jua';font-size:17px;
   color:#fff;background:var(--mint);cursor:pointer;box-shadow:0 4px 0 #57A483;transition:.1s}
 .bigbtn:active{transform:translateY(3px);box-shadow:0 1px 0 #57A483}
